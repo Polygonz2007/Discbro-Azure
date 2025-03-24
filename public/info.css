@@ -1,0 +1,40 @@
+body {
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+form {
+    text-align: left;
+}
+
+input[type=submit] {
+    margin-top: var(--text-title-size);
+}
+
+h1 {
+    font-size: var(--text-title-size);
+}
+
+h3 {
+    font-size: var(--text-subtitle-size);
+}
+
+a {
+    color: var(--link-text-color);
+}
+
+::placeholder {
+    opacity: 0.5;
+}
+
+#subtitle {
+    margin-top: 7vh;
+}
+
+@media all and (min-width:0px) and (max-width: 670px) {
+    :root {
+        zoom: 75%;
+    }
+}

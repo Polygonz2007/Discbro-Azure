@@ -1,0 +1,107 @@
+
+/** Preferences **/
+:root { /* Default theme: dark */
+    /* Dimensions */
+    --sidebar-width: 24rem;
+    --message-box-height: 3rem;
+    --segment-padding: 0.3rem;
+    --scrollbar-padding: 1rem;
+
+    --message-padding-left: 3.65rem;
+    --message-view-width: calc(100vw - var(--sidebar-width));
+
+    --message-media-width-max: calc(var(--message-view-width) - var(--message-padding-left) - var(--segment-padding) * 2 - var(--scrollbar-padding));
+    --message-media-width: min(32rem, var(--message-media-width-max));
+
+    --user-box-height: 4rem;
+    --user-box-img-size: calc(var(--user-box-height) - var(--segment-padding) * 2);
+
+    --icon-size: 2rem;
+
+    /* Text */
+    --text-font: "Consolas";
+    --text-size-small: 0.8rem;
+    --text-size: 1rem;
+    --text-size-big: 1.5rem;
+
+    --text-title-size: 3rem;
+    --text-subtitle-size: 1.7rem;
+
+    /* Colors */
+    --back-color: #123; /* 123 */
+    --middle-color: #234; /* 234 */
+    --top-color: #345; /* 345 */
+    --selected-color: #DDD;
+
+    --text-color: #FFF;
+    --light-text-color: #FFFE;
+    --weak-text-color: #FFF7;
+    --link-text-color: #ACE;
+
+    --highlight-color: #AA57;
+    --error-color: #A55;
+
+    /* Status colors */
+    --status-1-col: #5A5; /* Online */
+    --status-2-col: #AA5; /* Inactive */
+    --status-3-col: #A55; /* Do Not Disturb */
+    --status-4-col: #55A; /* Do Disturb (inactive) */
+    --status-5-col: #5AA; /* Do Disturb (active) */
+}
+
+:root[theme=dark-contrast] {
+    --back-color: #012;
+    --middle-color: #123;
+    --top-color: #356;
+}
+
+:root[theme=midnight] {
+    --back-color: #000; /* 123 */
+    --middle-color: #111; /* 234 */
+    --top-color: #222; /* 345 */
+    
+    --text-color: #DDD;
+    --light-text-color: #DDDE;
+    --weak-text-color: #DDD7;
+    --link-text-color: #ACE;
+
+    --highlight-color: #2A27;
+}
+
+:root[theme=light] {
+    --back-color: #EEE; /* 123 */
+    --middle-color: #F8F8F8; /* 234 */
+    --top-color: #FFF; /* 345 */
+
+    --text-color: #000;
+    --light-text-color: #000E;
+    --weak-text-color: #0007;
+    --link-text-color: #55A;
+
+    --highlight-color: #EE37;
+}
+
+/** Font **/
+@font-face {
+    font-family: "Consolas";
+    src: url("./graphics/font/CONSOLA.TTF");
+}
+
+@font-face {
+    font-family: "Consolas";
+    src: url("./graphics/font/CONSOLAB.TTF");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Consolas";
+    src: url("./graphics/font/CONSOLAI.TTF");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Consolas";
+    src: url("./graphics/font/CONSOLAZ.TTF");
+    font-weight: bold;
+    font-style: italic;
+}

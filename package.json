@@ -1,0 +1,31 @@
+{
+  "name": "discbro",
+  "version": "1.0.0",
+  "description": "A messaging app similar to Discord",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Polygonz2007/Discbro.git"
+  },
+  "author": "Polygonz2007",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Polygonz2007/Discbro/issues"
+  },
+  "homepage": "https://github.com/Polygonz2007/Discbro#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "better-sqlite3": "^11.8.1",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "fs": "^0.0.1-security",
+    "mssql": "^11.0.1",
+    "path": "^0.12.7",
+    "ws": "^8.18.0"
+  }
+}

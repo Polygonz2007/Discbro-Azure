@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--back-color);
+    color: var(--text-color);
+}
+
+* {
+    transition-property: background-color, color, filter;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+}
+
+body, input {
+    font-family: var(--text-font);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+
+    background-color: var(--middle-color);
+    border: solid var(--top-color) 0.5rem;
+
+    width: 27rem;
+    margin: auto;
+    margin-top: var(--text-subtitle-size);
+    padding: 2rem 4rem;
+
+    box-sizing: border-box;
+}
+
+input {
+    border: var(--weak-text-color) solid 2px;
+    outline: none;
+
+    border-radius: 0;
+    margin: none;
+    padding: none;
+}
+
+input:focus {
+    background-color: var(--selected-color);
+}
+
+input.invalid {
+    background-color: var(--error-color);
+}
+
+label {
+    align-self: normal;
+}
+
+.logo {
+    margin: 0 10vw;
+    margin-top: 10vh;
+
+    height: 10rem;
+    width: 80vw;
+}
+
+/* Highlight image buttons */
+a:has(.img-btn):hover {
+    filter: drop-shadow(var(--text-color) 0 0 var(--text-size-small));
+}
+
+a:has(.img-btn):active {
+    filter: drop-shadow(var(--text-color) 0 0 var(--text-size-small)) drop-shadow(var(--weak-text-color) 0 0 var(--text-size));
+}
+
+/* Light Mode Icons */
+:root[theme="light"] {
+    img.icon {
+        filter: brightness(0);
+    }
+    
+}

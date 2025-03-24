@@ -1,0 +1,13 @@
+div {
+    width: 8em;
+    height: 40em;
+    overflow-y: scroll;
+}
+
+#a {
+    background-color: aquamarine;
+}
+
+#b {
+    background-color: blueviolet;
+}
