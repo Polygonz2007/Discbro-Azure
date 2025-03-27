@@ -9,7 +9,7 @@ sudo apt install git nodejs npm -y
 
 # Get discbro
 git clone https://github.com/Polygonz2007/Discbro-Azure
-cd /discbro/Discbro-Azure
+cd /app/Discbro-Azure
 
 # Install packages, run
 npm i
